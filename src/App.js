@@ -13,8 +13,7 @@ function App() {
     <div className="wrapper">
       {/* header */}
       <header>
-        <div className='gnb '>
-          <h1 className='logo'>HyeonGyu</h1>
+        <div className='gnb'>
           <div className={`gnb_menu ${menuOn ? 'active' : ''}`} onClick={ toggleMenu }>
             <span></span>
             <span></span>
@@ -23,23 +22,21 @@ function App() {
             <span></span>
             <span></span>
           </div>
+          <h1 className='logo'>HyeonGyu</h1>
         </div>
       </header>
       {/* cnt */}
       <section className='cnt_body'>
         <section className='cnt_main'>
           <div className='top_section tac'>
-            <p>Hello !</p>
-            <p>I'm Park HyeonGyu.</p>
+            <div className='main_icon'>
+              <img src={process.env.PUBLIC_URL + '../img/main_icon.png'} alt='main_icon' />
+            </div>
+            <p>Park HyeonGyu.</p>
           </div>
         </section>
       </section>
-      <footer>
-        <div className='wrap_inner2'>
-          <p className='ft_info tac'>Designed and Developed by HyeonGyu Park</p>
-          <p className='copyright tac'>Copyright © 2023 HG</p>
-        </div>
-      </footer>
+      
     </div>
   );
 }

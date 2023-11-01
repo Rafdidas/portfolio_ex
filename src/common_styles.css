@@ -85,9 +85,9 @@ input[type=text], input[type=password], input[type=submit], input[type=button], 
 
 :root {
   /* color */
-  --main--bg: #353535;
+  --main--bg: #353353;
   --white: #fff;
-  --purple: #be50f4;
+  --purple: #3a0d50;
   --black: #000;
 }
 
